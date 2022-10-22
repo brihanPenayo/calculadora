@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    background-color: lightgray;
+    font-family: Montserrat, poppins;
+}
+
+#contenedor {
+    border-radius: 30px;
+    overflow: hidden;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#calculadora {
+    background-color: rgb(193, 199, 197);
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+#infoCalc {
+    font-size: 15px;
+    margin: 50px;
+}
+
+#infoCalculo {
+    background-color: crimson;
+    color: azure;
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.contenido {
+    overflow: hidden;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input {
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    width: 150px;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 15px;
+    padding: 12px 45px;
+    border-radius: 30px;
+    background-color: #FF416C;
+    border: 1px solid #FF416C;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 20ms ease-in;
+}
+
+button:active {
+    transform: scale(0.95);
+}

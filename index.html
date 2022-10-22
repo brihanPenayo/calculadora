@@ -1,0 +1,34 @@
+<!DOCTYPE html> <!-- Sirve para que los navegadores viejos lean el tipo de archivo -->
+<html>
+
+<head>
+    <title>Calculadora de Hidratacion Basal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <div id="calculadora">
+            <div class="contenido">
+                <h1>Hidratación Basal</h1>
+                <p>Ingrese el peso en KG</p>
+                <input type="number" placeholder="Kilos" min="1" max="30">
+                <button type="submit">Calcular</button>
+                <p>Resultado</p>
+            </div>
+        </div>
+        <!-- <span> escribe el texto en la misma linea, no utiliza bloque -->
+        <div id="infoCalculo">
+            <div class="contenido">
+                <h1>Como se calcula ?</h1>
+                <ul id="infoCalc">
+                    <li>Cuando el niño tiene hasta 10kg: 100cc por cada kilo.</li>
+                    <li>Luego, por cada kilo arriba de 10 y hasta 20kg, se suman 50cc.</li>
+                    <li>Finalmente, por cada kilo arriba de 20kg se suman 20cc.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
