@@ -1,9 +1,10 @@
 <!DOCTYPE html> <!-- Sirve para que los navegadores viejos lean el tipo de archivo -->
-<html>
 
 <head>
     <title>Calculadora de Hidratacion Basal</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+
 </head>
 
 <body>
@@ -12,8 +13,12 @@
             <div class="contenido">
                 <h1>Hidratación Basal</h1>
                 <p>Ingrese el peso en KG</p>
-                <input type="number" placeholder="Kilos" min="1" max="30">
-                <button type="submit">Calcular</button>
+                <form>
+                    <input type="number" required placeholder="Kilos" maxlength="2" min="1" max="30"
+                        oninvalid="this.setCustomValidity('Ingrese un valor entre 1 y 30')"
+                        oninput="setCustomValidity('')">
+                    <button type="submit">Calcular</button>
+                </form>
                 <p>Resultado</p>
             </div>
         </div>
