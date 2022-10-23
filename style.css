@@ -10,8 +10,8 @@ body {
 #contenedor {
     border-radius: 30px;
     overflow: hidden;
-    width: 60%;
-    height: 60%;
+    width: 1000px;
+    height: 500px;
     position: absolute;
     inset: 0;
     margin: auto;
