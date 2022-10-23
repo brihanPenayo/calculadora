@@ -2,6 +2,7 @@
 
 <head>
     <title>Calculadora de Hidratacion Basal</title>
+    <link rel="icon" href="res/icon.png">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 
@@ -12,7 +13,7 @@
         <div id="calculadora">
             <div class="contenido">
                 <h1>Hidratación Basal</h1>
-                <p>Ingrese el peso en KG</p>
+                <p id="subHidratacionBasal">Ingrese el peso en KG</p>
                 <form>
                     <input type="number" required placeholder="Kilos" maxlength="2" min="1" max="30"
                         oninvalid="this.setCustomValidity('Ingrese un valor entre 1 y 30')"
@@ -27,9 +28,11 @@
             <div class="contenido">
                 <h1>Como se calcula ?</h1>
                 <ul id="infoCalc">
-                    <li>Cuando el niño tiene hasta 10kg: 100cc por cada kilo.</li>
-                    <li>Luego, por cada kilo arriba de 10 y hasta 20kg, se suman 50cc.</li>
-                    <li>Finalmente, por cada kilo arriba de 20kg se suman 20cc.</li>
+                    <li>Cuando el niño tiene hasta 10kg:<br>Se suministra 100cc por cada kilo.</li>
+                    <br>
+                    <li>Luego, por cada kilo arriba de 10 y hasta 20kg<br>Se suman 50cc.</li>
+                    <br>
+                    <li>Finalmente, por cada kilo arriba de 20kg<br>Se suman 20cc.</li>
                 </ul>
             </div>
         </div>

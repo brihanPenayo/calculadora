@@ -12,10 +12,10 @@ body {
 #contenedor {
     border-radius: 30px;
     overflow: hidden;
-    width: 50vw;
-    height: 80vh;
-    min-height: 800px;
-    min-width: 550px;
+    width: 60vw;
+    height: 50vh;
+    min-height: 200px;
+    min-width: 800px;
     position: absolute;
     inset: 0;
     margin: auto;
@@ -25,39 +25,37 @@ body {
 
 #calculadora {
     background-color: rgb(228, 228, 228);
-    width: 100%;
-    height: 50%;
-    text-align: center;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    width: 50%;
+    height: 100%;
+    float: left; 
+    text-align: center;   
 }
 
 
 #infoCalc {
-    font-size: 15px;
-    margin: 50px;
+    font-size: 14px;
+    margin: 20px;
+    text-align: left;
 }
 
 #infoCalculo {
     background-color: crimson;
     color: azure;
-    width: 100%;
-    height: 50%;
+    width: 50%;
+    height: 100%;
+    float: left;
     text-align: center;
-
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .contenido {
     overflow: hidden;
     position: relative;
-    /* transform: translateY(-50%); */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 input {
+    font-style: italic;
     text-align: center;
     display: block;
     margin: auto;
@@ -69,9 +67,13 @@ input {
     border-radius: 5px;
 }
 
+#subHidratacionBasal {
+    font-size: 14px;
+
+}
 button {
     font-size: 15px;
-    padding: 12px 45px;
+    padding: 12px 30px;
     border-radius: 30px;
     background-color: #FF416C;
     border: 1px solid #FF416C;
