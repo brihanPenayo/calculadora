@@ -25,6 +25,7 @@ body {
 
 #calculadora {
     background-color: rgb(228, 228, 228);
+    color: #393E41;
     width: 50%;
     height: 100%;
     float: left; 
@@ -39,7 +40,7 @@ body {
 }
 
 #infoCalculo {
-    background-color: crimson;
+    background-color: #32936F;
     color: azure;
     width: 50%;
     height: 100%;
@@ -75,8 +76,8 @@ button {
     font-size: 15px;
     padding: 12px 30px;
     border-radius: 30px;
-    background-color: #FF416C;
-    border: 1px solid #FF416C;
+    background-color: #32936F;
+    border: 1px solid #32936F;
     color: #FFFFFF;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -84,5 +85,5 @@ button {
 }
 
 button:active {
-    transform: scale(0.95);
+   transform:rotate(5deg) ;
 }
