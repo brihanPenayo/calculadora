@@ -5,8 +5,8 @@
 /* Portrait o Vertical */ 
 @media screen and (orientation:portrait) {
     #contenedor {
-        width: 80vw;
-        height: 80vh;
+        width: 70vw;
+        height: 70vh;
         min-height: 700px;
         min-width: 400px;
     }
@@ -34,6 +34,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     font-family: montserrat;
+    font-size: medium;
 }
 
 #contenedor {
@@ -57,7 +58,7 @@ body {
 
 
 #infoCalc {
-    font-size: 14px;
+    font-size: 95%;
     margin: 20px;
     text-align: left;  
     float: left;
@@ -92,11 +93,11 @@ input {
 }
 
 #subHidratacionBasal {
-    font-size: 14px;
+    font-size: 95%;
 
 }
 button {
-    font-size: 15px;
+    font-size: 95%;
     padding: 12px 30px;
     border-radius: 30px;
     background-color: #32936F;
