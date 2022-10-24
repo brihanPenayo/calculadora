@@ -2,6 +2,24 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
+/* Portrait o Vertical */ 
+@media screen and (orientation:portrait) {
+    #contenedor {
+        border-radius: 30px;
+        overflow: hidden;
+        width: 90vw;
+        height: 40vh;
+        min-height: 400px;
+        min-width: 800px;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+} 
+
+
 body {
     background-image: url("res/sueros.jpg");
     background-size: cover;
