@@ -6,7 +6,7 @@
 @media screen and (orientation:portrait) {
     .orient {
         width: 90vw;
-        height: 40vh;
+        height: 30vh;
         min-height: 400px;
         min-width: 800px;
     }
