@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-@import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800');
 
-/* Portrait o Vertical */ 
+/* Portrait o Vertical */
 @media screen and (orientation:portrait) {
     #contenedor {
         width: 70vw;
@@ -10,11 +8,17 @@
         min-height: 700px;
         min-width: 400px;
     }
-    .responsiveHV{
+
+    .responsiveHV {
         width: 100%;
         height: 50%;
     }
-} 
+}
+
+.textoResultados {
+    margin: 3%;
+    font-weight: 600;
+}
 
 @media screen and (orientation:landscape) {
     #contenedor {
@@ -23,11 +27,12 @@
         min-height: 400px;
         min-width: 800px;
     }
-    .responsiveHV{
+
+    .responsiveHV {
         width: 50%;
         height: 100%;
     }
-} 
+}
 
 body {
     background-image: url("res/sueros.jpg");
@@ -52,20 +57,27 @@ body {
 #calculadora {
     background-color: rgb(228, 228, 228);
     color: #393E41;
-    float: left; 
-    text-align: center;   
+    float: left;
+    text-align: center;
+}
+
+#seccionResultado {
+    position: absolute;
+    padding-bottom: 2%;
 }
 
 
 #infoCalc {
     font-size: 95%;
-    margin: 20px;
-    text-align: left;  
+    margin: auto;
+    margin-left: 2%;
+    margin-right: 10%;
+    text-align: left;
     float: left;
 }
 
 #infoCalculo {
-    
+
     background-color: #32936F;
     color: azure;
     text-align: center;
@@ -73,10 +85,11 @@ body {
 }
 
 .contenido {
-    overflow: hidden;
+    padding-top: 12%;
+    /* overflow: hidden;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 
 input {
@@ -96,6 +109,7 @@ input {
     font-size: 95%;
 
 }
+
 button {
     font-size: 95%;
     padding: 12px 30px;
@@ -109,5 +123,5 @@ button {
 }
 
 button:active {
-   transform:rotate(5deg) ;
+    transform: scale(0.95);
 }

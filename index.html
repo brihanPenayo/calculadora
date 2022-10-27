@@ -2,12 +2,10 @@
 
 <head>
     <title>Calculadora de Hidratacion Basal</title>
-    <link rel="icon" href="res/icon.png">
+    <link rel="icon" href="./res/icon.png">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+    <script src="./jscript.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
 </head>
 
 <body>
@@ -16,13 +14,16 @@
             <div class="contenido">
                 <h1>Hidratación Basal</h1>
                 <p id="subHidratacionBasal">Ingrese el peso en KG</p>
-                <form>
-                    <input type="number" required placeholder="Kilos" maxlength="2" min="1" max="30"
-                        oninvalid="this.setCustomValidity('Ingrese un valor entre 1 y 30')"
+                <form id="form">
+                    <input id="input-peso" type="number" required placeholder="Kilos" min="1" max="120"
+                        oninvalid="this.setCustomValidity('Ingrese un valor entre 1 y 120')"
                         oninput="setCustomValidity('')">
-                    <button type="submit">Calcular</button>
+                    <button id="submit" type="submit">Calcular</button>
                 </form>
-                <p>Resultado</p>
+                <div id="seccion-resultados">
+                    <h5 class="textoResultados" id="resultadoTitulo"> </h5>
+                    <h4 class="textoResultados" id="resultado"> </h4>
+                </div>
             </div>
         </div>
         <!-- <span> escribe el texto en la misma linea, no utiliza bloque -->
@@ -30,18 +31,17 @@
             <div class="contenido">
                 <h1>¿ Cómo se calcula ?</h1>
                 <ul id="infoCalc">
-                    <li>Cuando el niño tiene hasta 10kg:<br>Se suministra 100cc por cada kilo.</li>
+                    <li>Cuando el niño tiene hasta 10kg: Se suministra 100cc por cada kilo.</li>
                     <br>
-                    <li>Luego, por cada kilo arriba de 10 y hasta 20kg<br>Se suman 50cc.</li>
+                    <li>Luego, por cada kilo arriba de 10 y hasta 20kg: Se suman 50cc.</li>
                     <br>
-                    <li>Finalmente, por cada kilo arriba de 20kg<br>Se suman 20cc.</li>
+                    <li>Finalmente, por cada kilo arriba de 20kg: Se suman 20cc.</li>
+                    <br>
+                    <li>Para mayores de 30kg se calcula por Superficie Corporal</li>
+
                 </ul>
             </div>
         </div>
-        <!-- <div id="significadoHidratacionBasal">
-            <h1>Qué es la Hidratación Basal ?</h1>
-            <p>
-        </div> -->
     </div>
 </body>
 
